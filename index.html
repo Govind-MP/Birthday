@@ -1,0 +1,390 @@
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+    <link rel="stylesheet" href="./style.css">
+    <title>Happy Birthday</title>
+</head>
+<body>
+    <script>
+        function createBalloon() {
+            const colors = ['#ff4500', '#32cd32', '#1e90ff', '#ff69b4', '#ffd700'];
+            const balloon = document.createElement('div');
+            balloon.className = 'balloon';
+            balloon.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+            balloon.style.left = `${Math.random() * (window.innerWidth - 60)}px`;
+            balloon.style.top = `-70px`; // Start below the viewport
+
+            document.body.appendChild(balloon);
+
+            balloon.style.animation = `float ${Math.random() * 3 + 2}s ease-in forwards`;
+
+            setTimeout(() => {
+                balloon.remove();
+            }, 2000); // Remove balloon after animation
+        }
+
+        function startBalloons() {
+            const interval = 200; // Create a new balloon every 300ms
+            setInterval(createBalloon, interval);
+        }
+
+        window.addEventListener('load', () => {
+            setTimeout(startBalloons, 2000); // Start balloons after 3 seconds
+            
+        });
+    </script>
+    <section id="one">
+        <div class="hero">
+            <div class="in-container">
+                <p class="hey">
+                    Ooi 👀
+                </p>
+            </div>
+            
+            <div class="in-container">
+                <p class="hap">
+                    HAPPY BIRTHDAY
+                </p>
+            </div>
+            <div class="in-container">
+                <p class="i">
+                    Love you patti 💋 <br>
+                </p>
+            </div>
+            <div class="in-container">
+                <p class="so">
+                    Ne evide illalo, so...enna oru virtual gift <br>
+                </p>
+            </div>
+            <div class="in-container2">
+                <p class="so">
+                    <span class="tab"></span> Hehe 😗
+                </p>
+            </div>
+        </div>
+    </section>
+    <div class = "banner">
+        <video autoplay loop muted plays-inline>
+            <source src="backgroundv.mp4" type="video/mp4">
+        </video>
+    </div>
+     <div class="trans-p-c"> 
+    </div>
+    <section class="two">
+        <div class="container-cotton">
+            <p>
+                It's been exactly
+            </p>
+            <div class="clock-holder">
+                <font id="days"></font>
+                <font>:</font>
+                <font id="hours"></font>
+                <font>:</font>
+                <font id="minutes"></font>
+                <font>:</font>
+                <font id="seconds"></font>
+            </div>
+            <p>
+                since we have been together in a relationship. And I will be there for you forever❤️
+            </p>
+        </div>
+    </section>
+    <div class="trans-c-l">
+
+    </div>
+    <section id="three">
+        <div class="container-lum">
+            <img src="./BORI.jpg" alt="" class="bori"/>
+            <img src="./vecteezy_black-heart-line-png-file_20945974_746.png" alt="" class="love"/>
+            <video width="400px" height="400px" controls="controls">
+            <source src="./Ghost.mp4" type="video/mp4" />
+        </div>
+        <div class="container-lum">
+            <p>
+                "I want you to be always happy and healthy. I know you overthink a lot on many things even when we fight, but remember I will always be with you by your side and will take care of you till my last breath. Wish I could kiss you now. Love you koreeeeeee"
+                <br/><br/> — Suchi Muchi
+                            </p>
+        </div>
+    </section>
+    <div class="trans-l-p">
+
+    </div>
+    <section id="four">
+        <div class="container">
+            <p>
+                <br/><br/>
+                Play it and keep on scrolling
+            </p>
+            <div>
+                <video width="400px" height="250px" controls="controls">
+                <source src="./Rex Orange County - Best Friend _Lyrics_ ( 720 X 1280 ).mp4" type="video/mp4" />
+            </div>
+            <p>
+                Rex Orange County - Best Friend
+            </p>
+        </div>
+        <div class="container">
+            <p>
+                Each card has unique suprises. You can only choose one.<br/>
+                So, choose carefully baby...
+            </p>
+            <div class="card-container">
+                <div class="card" onclick="cardSelected(this)">
+                    <h2>
+                        Massage
+                    </h2>
+                    <p>
+                        Free 30min massage, anytime anywhere you want ✨
+                    </p>
+                    <font>
+                        ?
+                    </font>
+                </div>
+                <div class="card" onclick="cardSelected(this)">
+                    <h2>
+                        Reel
+                    </h2>
+                    <p>
+                        Will make a any reel of your choice together 😮‍💨
+                    </p>
+                    <font>
+                        ?
+                    </font>
+                </div>
+                <div class="card" onclick="cardSelected(this)">
+                    <h2>
+                        Princess Treatment 👸
+                    </h2>
+                    <p>
+                        Princess Treatment for 24hrs 🤯👑
+                    </p>
+                    <font>
+                        ?
+                    </font>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="trans-p-la">
+
+    </div>
+    <section id="five">
+        <div class="container-cotton">
+            <p class="birthday-wishes">
+                Happy Birthday to the amazing soul who graced my life with her presence! 🎉🎂 Your special day is a reminder of the incredible journey we've shared and the beautiful moments that lie ahead.<br/><br/>
+
+From the moment we met, your laughter has been the melody that dances in my heart, and your kindness has been the anchor that grounds my soul. As you embark on another year of your life's adventure, I hope it is the best year you ever had yet. May you continue to spread your infectious joy to everyone you meet, just as you've illuminated my life with your radiant smile.<br/><br/>
+
+Here's to celebrating your dreams, your accomplishments, and the incredible person you are. May your wishes come true like magic, and may your heart always be surrounded by the warmth of love and the support of those who cherish you.<br/><br/>
+
+Thank you for being the person you are and for sharing your beautiful soul with me. Cheers to celebrating the wonderful you on this special day and every day that follows. Happy Birthday, my love! 🎈❤️🥳
+            </p>
+        </div>
+        <div class="container-cotton">
+            <p>
+                I make the best cake you will ever find, just for you!<br/>
+                Blow the candle love....<br/><br/>
+                Go, shorty<br/>
+It's your birthday<br/>
+            </p>
+            <img src="./Untitled.png" alt="" class="cake"/>
+
+            <p>
+                That's right! your are choki from now.
+            </p>
+        </div>
+        <div class="container-cotton">
+            <p>
+                Make with ❤ by Virus
+            </p>
+        </div>
+    </section>
+
+    <script src="./main.js"></script>
+</body>
+</html> 
+
+
+
+
+
+<!--  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+    <link rel="stylesheet" href="./style.css">
+    <title>Happy Birthday</title>
+</head>
+<body>
+    <section id="one">
+        <div class="hero">
+            <div class="in-container">
+                <p class="hey">
+                    Ooi 👀
+                </p>
+            </div>
+            
+            <div class="in-container">
+                <p class="hap">
+                    HAPPY BIRTHDAY
+                </p>
+            </div>
+            <div class="in-container">
+                <p class="i">
+                    Love you patti 💋 <br>
+                </p>
+            </div>
+            <div class="in-container">
+                <p class="so">
+                    Ne evide illao, so...enna oru virtual gift <br>
+                </p>
+            </div>
+            <div class="in-container2">
+                <p class="so">
+                    <span class="tab"></span> Hehe 😗
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="banner">
+        <video autoplay loop muted plays-inline>
+            <source src="backgroundv.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <section class="two">
+        <div class="container-cotton">
+            <p>
+                It's been exactly
+            </p>
+            <div class="clock-holder">
+                <font id="days"></font>
+                <font>:</font>
+                <font id="hours"></font>
+                <font>:</font>
+                <font id="minutes"></font>
+                <font>:</font>
+                <font id="seconds"></font>
+            </div>
+            <p>
+                since we have been together in a relationship. And I will be there for you forever❤️
+            </p>
+        </div>
+    </section>
+
+    <section id="three">
+        <div class="container-lum">
+            <img src="./BORI.jpg" alt="" class="bori"/>
+            <img src="./vecteezy_black-heart-line-png-file_20945974_746.png" alt="" class="love"/>
+            <video width="400px" height="400px" controls="controls">
+                <source src="./Ghost.mp4" type="video/mp4" />
+            </video>
+        </div>
+        <div class="container-lum">
+            <p>
+                "I want you to be always happy and healthy. I know you overthink a lot on many things even when we fight, but remember I will always be with you by your side and will take care of you till my last breath. Wish I could kiss you now. Love you koreeeeeee"
+                <br/><br/> — Suchi Muchi
+            </p>
+        </div>
+    </section>
+
+    <section id="four">
+        <div class="container">
+            <p>
+                <br/><br/>
+                Play it and keep on scrolling
+            </p>
+            <div>
+                <video width="400px" height="250px" controls="controls">
+                    <source src="./Rex Orange County - Best Friend _Lyrics_ ( 720 X 1280 ).mp4" type="video/mp4" />
+                </video>
+            </div>
+            <p>
+                Rex Orange County - Best Friend
+            </p>
+        </div>
+        <div class="container">
+            <p>
+                Each card has unique surprises. You can only choose one.<br/>
+                So, choose carefully baby...
+            </p>
+            <div class="card-container">
+                <div class="card" onclick="cardSelected(this)">
+                    <h2>
+                        Massage
+                    </h2>
+                    <p>
+                        Free 30min massage, anytime anywhere you want ✨
+                    </p>
+                    <font>
+                        ?
+                    </font>
+                </div>
+                <div class="card" onclick="cardSelected(this)">
+                    <h2>
+                        Reel
+                    </h2>
+                    <p>
+                        Will make a any reel of your choice together 😮‍💨
+                    </p>
+                    <font>
+                        ?
+                    </font>
+                </div>
+                <div class="card" onclick="cardSelected(this)">
+                    <h2>
+                        Princess Treatment 👸
+                    </h2>
+                    <p>
+                        Princess Treatment for 24hrs 🤯👑
+                    </p>
+                    <font>
+                        ?
+                    </font>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="five">
+        <div class="container-cotton">
+            <p class="birthday-wishes">
+                Happy Birthday to the amazing soul who graced my life with her presence! 🎉🎂 Your special day is a reminder of the incredible journey we've shared and the beautiful moments that lie ahead.<br/><br/>
+
+                From the moment we met, your laughter has been the melody that dances in my heart, and your kindness has been the anchor that grounds my soul. As you embark on another year of your life's adventure, I hope it is the best year you ever had yet. May you continue to spread your infectious joy to everyone you meet, just as you've illuminated my life with your radiant smile.<br/><br/>
+
+                Here's to celebrating your dreams, your accomplishments, and the incredible person you are. May your wishes come true like magic, and may your heart always be surrounded by the warmth of love and the support of those who cherish you.<br/><br/>
+
+                Thank you for being the person you are and for sharing your beautiful soul with me. Cheers to celebrating the wonderful you on this special day and every day that follows. Happy Birthday, my love! 🎈❤️🥳
+            </p>
+        </div>
+        <div class="container-cotton">
+            <p>
+                I make the best cake you will ever find, just for you!<br/>
+                Blow the candle love....<br/><br/>
+                Go, shorty<br/>
+                It's your birthday<br/>
+            </p>
+            <img src="./Untitled.png" alt="" class="cake"/>
+            <p>
+                That's right! your are choki from now.
+            </p>
+        </div>
+        <div class="container-cotton">
+            <p>
+                Made with ❤ by Virus
+            </p>
+        </div>
+    </section>
+
+    <script src="./main.js"></script>
+</body>
+</html>
+-->
