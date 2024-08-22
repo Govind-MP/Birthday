@@ -1,254 +1,168 @@
 body { 
-    font-family: 'Comfortaa';font-size: 22px;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 5vw;
     background-color: #E0BBE4;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
-.banner{ 
+
+.banner { 
     width: 100%;
     height: 3vh;
-    background-image: linear-gradient(rgb(223, 176, 216),rgb(235, 172, 226));
-    background-position: center;
-    background-size: center;
+    background-image: linear-gradient(rgb(223, 176, 216), rgb(235, 172, 226));
 }
 
 .hero {
-    padding: 5% 10%;
+    padding: 10% 5%;
 }
 
 .in-container {
     display: inline-block;
+    width: 100%;
 }
 
-.in-container .hey{
-    font-size: 30px;
+.in-container .hey,
+.in-container .hap,
+.in-container .i,
+.in-container .so {
     font-weight: 900;
-    letter-spacing: 1px;
-    border-right: 5px solid;
-    width: 0%;
+    border-right: 3px solid;
     white-space: nowrap;
     overflow: hidden;
-    animation:
-            typing 1s steps(13),
-            cursor .4s step-end infinite alternate;
-    animation-fill-mode: forwards ;
+    animation: cursor 0.4s step-end infinite alternate, typing 1s steps(13);
+    animation-fill-mode: forwards;
 }
 
-@keyframes cursor {
-    50% { border-color: transparent;}
+.in-container .hey {
+    font-size: 6vw;
+    animation: typing 1s steps(13), cursor 0.4s step-end infinite alternate;
 }
 
-@keyframes typing {
-    from { width: 0;}
-    to {width: 100%; border-color: transparent;}
-}
-
-.in-container .hap{
-    font-weight: 900;
-    letter-spacing: 1px;
-    border-right: 5px solid;
-    width: 0%;
-    white-space: nowrap;
-    overflow: hidden;
-    
-    animation:
-            typing 2s steps(14),
-            cursor .4s step-end infinite alternate;
-    animation-delay: 2s;
-    animation-fill-mode: forwards ;
+.in-container .hap {
+    font-size: 16vw;
     color: #ffffff;
-    font-size: 110px;
-    letter-spacing: 3px;
-    margin-block-start: 60px;
-    margin-block-end: 60px;
+    letter-spacing: 2vw;
+    margin: 10vw 0;
+    animation: typing 2s steps(14), cursor 0.4s step-end infinite alternate;
+    animation-delay: 2s;
 }
 
-.in-container .i{
-    font-weight: 900;
-    border-right: 5px solid;
-    width: 0%;
-    white-space: nowrap;
-    overflow: hidden;
-    animation:
-            typing 2s steps(63),
-            cursor .4s step-end infinite alternate;
+.in-container .i,
+.in-container .so,
+.in-container2 .so {
+    font-size: 5vw;
+    animation: typing 2s steps(63), cursor 0.4s step-end infinite alternate;
+    animation-fill-mode: forwards;
     animation-delay: 4s;
-    animation-fill-mode: forwards ;
-    font-size: 25px;
 }
 
-.in-container .so{
-    font-weight: 900;
-    border-right: 5px solid;
-    width: 0%;
-    white-space: nowrap;
-    overflow: hidden;
-    animation:
-            typing 3s steps(30),
-            cursor .4s step-end infinite alternate;
-    animation-delay: 7s;
-    animation-fill-mode: forwards ;
-    font-size: 25px;
+.trans-p-c,
+.trans-l-p,
+.trans-p-la,
+.trans-c-l {
+    width: 100%;
 }
-.in-container2 .so{
-    font-weight: 900;
-    border-right: 5px solid;
-    width: 0%;
-    white-space: nowrap;
-    overflow: hidden;
-    animation:
-            typing 3s steps(30),
-            cursor .4s step-end infinite alternate;
-    animation-delay: 11s;
-    animation-fill-mode: forwards ;
-    font-size: 25px;
-}
-
 
 .trans-p-c { 
-    height: 0px;
+    height: 0;
     background-image: linear-gradient(to bottom, rgba(224, 187, 228), rgba(254, 200, 216));
-    width: 100%;
 }
 
-.trans-l-p {
-    height: 200px;
-    background-image: linear-gradient(to bottom,rgba(255, 223, 211), rgba(224, 187, 228));
-    width: 100%;
-}
-
-.trans-p-la {
-    height: 200px;
-    background-image: linear-gradient(to bottom, rgba(224, 187, 228), rgba(254, 200, 216));
-    width: 100%;
-}
-
+.trans-l-p,
+.trans-p-la,
 .trans-c-l {
-    height: 200px;
-    background-image: linear-gradient(to bottom, rgba(254, 200, 216), rgba(255, 223, 211));
-    width: 100%;
+    height: 15vh;
 }
 
-
-.container-cotton {
-    background-color: #FEC8D8;
-    padding: 16% 16%;
+.container-cotton,
+.container-lum,
+.container-lavender {
+    padding: 20% 5%;
 }
 
-.container-cotton p{
-    font-size: 25px;
+.container-cotton p,
+.container p,
+.container-lum p {
+    font-size: 5vw;
 }
 
-.container-cotton font{
-    font-size: 120px;
-    margin-right: 10px;
+.container-cotton font {
+    font-size: 20vw;
+    margin-right: 2vw;
     font-weight: 900;
     color: white;
 }
 
 .clock-holder {
-    margin: 60px 0;
-}
-
-.container-lum {
-    background-color: #FFDFD3;
-    padding: 16% 8%;
-    position: relative;
+    margin: 10vw 0;
 }
 
 .bori {
-    height: 400px;
-    width: 400px;
-    margin-left: 70%;
-    
-}
-
-.container-lum video {
-    margin-top: -200px;
+    height: 20vh;
+    width: 40vw;
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
 
 .love {
-    height: 150px;
-    width: 400px;
+    height: 10vh;
+    width: 50vw;
     position: absolute;
-    left: 37%;
+    left: 50%;
     top: 40%;
-    transform: rotate(-20deg);
-}
-
-.container-lum p {
-    font-size: 30px;
-}
-
-.container {
-    padding: 16% 16%;
-}
-
-.container p{
-    font-size: 25px;
+    transform: translate(-50%, -50%) rotate(-20deg);
 }
 
 .card {
-    height: 350px;
-    width: 250px;
+    height: 30vh;
+    width: 30vw;
     background-color: #957DAD;
     color: white;
-    padding: 40px;
+    padding: 5vw;
     cursor: pointer;
     opacity: 1;
     transition: opacity 0.5s;
 }
 
-.card.fade-out {
-    opacity: 0;
-}
-
 .card-container {
     display: flex;
-    justify-content: space-between;
-    margin-top: 60px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vw;
 }
 
-.card h2{
-    width: fit-content;
-    font-size: 50px;
+.card h2 {
+    font-size: 7vw;
     display: none;
 }
 
-.card p{
+.card p {
     display: none;
 }
 
 .card font {
-    margin-top: 120px;
+    margin-top: 10vh;
     display: block;
-    font-size: 80px;
+    font-size: 15vw;
     text-align: center;
 }
 
-.card.show font{
+.card.show font {
     display: none;
 }
 
-.card.show p, .card.show h2{
+.card.show p,
+.card.show h2 {
     display: block;
 }
 
-.container-lavender {
-    background-color: #FEC8D8;
-    padding: 16%;
-}
-
-.birthday-wishes {
-    text-align: justify;
-}
-
 .cake {
-    width: 70%;
-    height: 400px;
-    margin-left: 15%;
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
 } 
-.banner video{  
+
+.banner video {  
     background-image: linear-gradient(to bottom, rgba(224, 187, 228), rgba(254, 200, 216));
     position: absolute; 
     right: 0; 
@@ -256,36 +170,23 @@ body {
     z-index: -1;
 }
 
-@media(min-aspect-ratio: 16/9){ 
-    .banner video{
+@media(min-aspect-ratio: 16/9) { 
+    .banner video {
         width: 100%;
         height: auto;
     }
 }
-.tab {
-    display: inline-block;
-    margin-left: 230px;
-}
 
-.balloon {
-    position: absolute;
-    width: 60px;
-    height: 80px;
-    background-color: #ff4500; /* Balloon color */
-    border-radius: 50%;
-    box-shadow: inset 0 -10px 0 rgba(0,0,0,0.1);
-    opacity: 0.6;
-}
+@media(max-width: 768px) {
+    .tab {
+        display: block;
+        margin-left: 0;
+    }
 
-.balloon:before {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    width: 2px;
-    height: 30px;
-    background-color: #333;
-    transform: translateX(-50%);
+    .balloon {
+        width: 40px;
+        height: 60px;
+    }
 }
 
 @keyframes float {
