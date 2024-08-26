@@ -34,3 +34,50 @@ function cardSelected(selectedCard) {
         }
     });
 }
+
+function explodeCake() {
+    const cake = document.getElementById('poop-cake');
+    const container = document.querySelector('.cake-container');
+    
+    // Hide the cake image
+    cake.style.display = 'none';
+
+    // Create the explosion effect
+    createExplosion(container, cake.src);
+
+    // Optionally, you can play a sound effect here
+    // let sound = new Audio('explosion_sound.mp3');
+    // sound.play();
+}
+
+function createExplosion(container, src) {
+    const pieces = 80; // Number of pieces
+    const pieceSize = 30; // Size of each piece (in pixels)
+
+    for (let i = 0; i < pieces; i++) {
+        const piece = document.createElement('div');
+        piece.className = 'cake-piece';
+        piece.style.backgroundImage = `url(${src})`;
+        piece.style.backgroundPosition = `${-(i % 5) * pieceSize}px ${-Math.floor(i / 5) * pieceSize}px`;
+        piece.style.width = `${pieceSize}px`;
+        piece.style.height = `${pieceSize}px`;
+
+        // Set random animation properties
+        piece.style.left = `${Math.random() * 100}%`;
+        piece.style.top = `${Math.random() * 100}%`;
+        piece.style.transform = `rotate(${Math.random() * 360}deg) scale(${Math.random() + 0.5})`;
+        piece.style.opacity = '0';
+
+        container.appendChild(piece);
+    }
+
+    // Remove the pieces after the animation
+    setTimeout(() => {
+        container.innerHTML = '';
+    }, 4000); // Adjust the timing to match the animation duration
+}
+
+function showText() {
+    document.getElementById('hiddenText').style.display = 'block';
+}
+
